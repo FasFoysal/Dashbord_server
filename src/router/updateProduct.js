@@ -27,7 +27,7 @@ const updateProduct = async (req, res, next) => {
         res.json({ mgs: "product not exiest", code: 1 });
       }
     } else {
-      res.json({ mgs: "Id not match", code: 2 });
+      res.json({ mgs: "Fill the form properly", code: 2 });
     }
   } catch (error) {
     if (error.name == "CastError") {
