@@ -14,6 +14,12 @@ app.use(cors({
     methods:["*"]
     // GET","POST","PATCH
 }))
+app.use(cors({
+    origin:"https://magical-salamander-05d597.netlify.app",
+    methods:["*"]
+    // GET","POST","PATCH
+}))
+
 
 // app use
 app.use(router)
