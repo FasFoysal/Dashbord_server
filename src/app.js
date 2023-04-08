@@ -6,7 +6,7 @@ require('./../db/config');
 const cors = require("cors");
 
 // port
-const PORT = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 app.use(express.json());
 
 app.use(cors({
@@ -19,6 +19,6 @@ app.use(cors({
 app.use(router)
 
 // port listen
-app.listen(PORT,()=>{
-    console.log(`app listen port is ${PORT}`);
+app.listen(port,()=>{
+    console.log(`app listen port is ${port}`);
 })
